@@ -217,5 +217,28 @@ public class VolleyballCup {
 		}
 	}
 	
+	public String printBinaryTree(Person c, int level, String co){
+		String msg = "";
+		if(rootSpectator==null) {
+			return msg = "f";
+		}
+		
+		if(co.equals(c.getCountry())) {
+			if(level!=0){ 
+				for(int i=0;i<level-1;i++) {
+					msg += "|\t";
+					msg += "|-------"+rootSpectator.getFirst_name();
+				}
+			} else 
+				msg += (rootSpectator.getFirst_name());
+				printBinaryTree(rootSpectator.getLeft(), level+1, co);
+				printBinaryTree(rootSpectator.getRight(), level+1, co);
+			}
+		return msg;
+		}
+
 	
+		
 }
+	
+
