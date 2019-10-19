@@ -94,7 +94,9 @@ public class Main {
 		System.out.println("Chose one countrie");
 		String co = input.nextLine();
 		
-		System.out.println(vc.printBinaryTree(vc.getRootSpectator(), 0, co));
+		System.out.println("no se que pasa, segun yo, eso deberia imprimir el arbol");
+		
+		//System.out.println(vc.printBinaryTree(vc.getRootSpectator(), 0, co));
 		
 		
 		 toContinue();
